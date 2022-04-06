@@ -1,5 +1,7 @@
-package com.example.sistematika.models;
+package com.example.sistematika.services.protocols;
 
+import com.example.sistematika.models.CandidateDtoModel;
+import com.example.sistematika.models.ProtocolDtoModel;
 import lombok.Data;
 
 import java.util.List;

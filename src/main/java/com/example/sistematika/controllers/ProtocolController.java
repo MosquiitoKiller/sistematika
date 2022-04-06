@@ -1,7 +1,7 @@
 package com.example.sistematika.controllers;
 
 import com.example.sistematika.models.PrecinctDtoModel;
-import com.example.sistematika.models.ProtocolInputModel;
+import com.example.sistematika.services.protocols.ProtocolInputModel;
 import com.example.sistematika.services.protocols.AddProtocolResponseModel;
 import com.example.sistematika.services.protocols.ProtocolInputBoundary;
 import org.springframework.web.bind.annotation.*;

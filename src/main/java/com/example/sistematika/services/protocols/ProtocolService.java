@@ -6,10 +6,6 @@ import com.example.sistematika.entities.Protocol;
 import com.example.sistematika.models.CandidateDtoModel;
 import com.example.sistematika.models.PrecinctDtoModel;
 import com.example.sistematika.models.ProtocolDtoModel;
-import com.example.sistematika.models.ProtocolInputModel;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class ProtocolService implements ProtocolInputBoundary{
     private final ProtocolDataAccess protocolDataAccess;
@@ -31,6 +27,7 @@ public class ProtocolService implements ProtocolInputBoundary{
     public AddProtocolResponseModel addProtocol(ProtocolInputModel protocolInputModel) {
         ProtocolDtoModel protocolDtoModel = protocolInputModel.getProtocol();
         if (protocolInputModel.getPrecinctId()==null
+                ||protocolDtoModel==null
                 ||protocolInputModel.getCandidateList()==null
                 ||protocolDtoModel.getName()==null
                 ||protocolDtoModel.getDate()==null
